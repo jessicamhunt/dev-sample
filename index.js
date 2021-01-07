@@ -1,4 +1,4 @@
-console.log("connected");
+/* Slideshow */
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -20,4 +20,15 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex - 1].style.display = "block";
+}
+
+/* Reveal Answer */
+
+function revealAnswer() {
+  var x = document.getElementById("answer");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
