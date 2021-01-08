@@ -141,7 +141,15 @@
       const btn = document.querySelector(".btn");
 
       function revealAnswer() {
-        console.log(btn);
+        const buttonGroup = document.querySelectorAll('input[name="answer1"]');
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
       }
     </script>
   </body>
