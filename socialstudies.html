@@ -31,11 +31,17 @@
             1. Janelle is excitedly telling her friend Reina how her job
             interview went. Reina keeps texting her boyfriend.
           </p>
-          <input type="radio" id="a1" name="answer1" value="a1" />
+          <input type="radio" id="a1" name="answer1" value="false" />
           <label for="a1">Respect</label><br />
-          <input type="radio" id="b1" name="answer1" value="b1" />
+          <input type="radio" id="b1" name="answer1" value="true" />
           <label for="b1">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
         <form id="form-2">
           <p class="question">
@@ -43,11 +49,17 @@
             what about the nighttime safety of the people who live in the
             neighborhood?”
           </p>
-          <input type="radio" id="a2" name="answer2" value="a2" />
+          <input type="radio" id="a2" name="answer2" value="true" />
           <label for="a2">Respect</label><br />
-          <input type="radio" id="b2" name="answer2" value="b2" />
+          <input type="radio" id="b2" name="answer2" value="false" />
           <label for="b2">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
         <form id="form-3">
           <p class="question">
@@ -55,22 +67,34 @@
             month, but he doesn’t enjoy the outdoors. His friends won’t stop
             nagging him.
           </p>
-          <input type="radio" id="a3" name="answer3" value="a3" />
+          <input type="radio" id="a3" name="answer3" value="false" />
           <label for="a3">Respect</label><br />
-          <input type="radio" id="b3" name="answer3" value="b3" />
+          <input type="radio" id="b3" name="answer3" value="true" />
           <label for="b3">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
         <form id="form-4">
           <p class="question">
             4. Because our cousin LeVar has asthma, we always dust and vacuum
             before he spends the night at our house.
           </p>
-          <input type="radio" id="a4" name="answer4" value="a4" />
+          <input type="radio" id="a4" name="answer4" value="true" />
           <label for="a4">Respect</label><br />
-          <input type="radio" id="b4" name="answer4" value="b4" />
+          <input type="radio" id="b4" name="answer4" value="false" />
           <label for="b4">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
         <form id="form-5">
           <p class="question">
@@ -78,26 +102,47 @@
             out on a walk. Jarrod says, “Don’t be scared, Stacy. Thor is really
             gentle. Just try rubbing his ears.”
           </p>
-          <input type="radio" id="a5" name="answer5" value="a5" />
+          <input type="radio" id="a5" name="answer5" value="false" />
           <label for="a5">Respect</label><br />
-          <input type="radio" id="b5" name="answer5" value="b5" />
+          <input type="radio" id="b5" name="answer5" value="true" />
           <label for="b5">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
         <form id="form-6">
           <p class="question">
             6. I love oyster-flavored Jiffy Snax! Doesn’t everybody?
           </p>
-          <input type="radio" id="a6" name="answer6" value="a6" />
+          <input type="radio" id="a6" name="answer6" value="false" />
           <label for="a6">Respect</label><br />
-          <input type="radio" id="b6" name="answer6" value="b6" />
+          <input type="radio" id="b6" name="answer6" value="true" />
           <label for="b6">Disrespect</label><br />
-          <input type="submit" value="Submit" />
+          <div class="display-message"></div>
+          <input
+            onclick="revealAnswer()"
+            type="button"
+            class="btn"
+            value="Reveal Answer"
+          />
         </form>
       </section>
     </main>
     <nav>
       <a href="english.html">Next Lesson - English</a>
     </nav>
+    <script>
+      /* Check Answers */
+
+      const btn = document.querySelector(".btn");
+
+      function revealAnswer() {
+        console.log(btn);
+      }
+    </script>
   </body>
 </html>
