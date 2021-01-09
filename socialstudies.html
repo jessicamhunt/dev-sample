@@ -37,7 +37,7 @@
           <label for="b1">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerOne()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -55,7 +55,7 @@
           <label for="b2">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerTwo()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -73,7 +73,7 @@
           <label for="b3">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerThree()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -90,7 +90,7 @@
           <label for="b4">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerFour()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -108,7 +108,7 @@
           <label for="b5">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerFive()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -124,7 +124,7 @@
           <label for="b6">Disrespect</label><br />
           <div class="display-message"></div>
           <input
-            onclick="revealAnswer()"
+            onclick="revealAnswerSix()"
             type="button"
             class="btn"
             value="Reveal Answer"
@@ -138,10 +138,76 @@
     <script>
       /* Check Answers */
 
-      const btn = document.querySelector(".btn");
+      const btn = document.getElementsByClassName(".btn");
 
-      function revealAnswer() {
-        const buttonGroup = document.querySelectorAll('input[name="answer1"]');
+      // Question1
+      function revealAnswerOne() {
+        const buttonGroup = document.getElementsByName("answer1");
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
+      }
+
+      // Question2
+      function revealAnswerTwo() {
+        const buttonGroup = document.getElementsByName("answer2");
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
+      }
+
+      // Question3
+      function revealAnswerThree() {
+        const buttonGroup = document.getElementsByName("answer3");
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
+      }
+
+      // Question4
+      function revealAnswerFour() {
+        const buttonGroup = document.getElementsByName("answer4");
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
+      }
+
+      // Question5
+      function revealAnswerFive() {
+        const buttonGroup = document.getElementsByName("answer5");
+        let valueSelected;
+        for (const radioButton of buttonGroup) {
+          if (radioButton.checked) {
+            valueSelected = radioButton.value;
+            break;
+          }
+        }
+        alert(valueSelected);
+      }
+
+      // Question6
+      function revealAnswerSix() {
+        const buttonGroup = document.getElementsByName("answer6");
         let valueSelected;
         for (const radioButton of buttonGroup) {
           if (radioButton.checked) {
