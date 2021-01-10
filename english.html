@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>English</title>
   </head>
   <body>
@@ -45,36 +46,52 @@
             <th>Definition</th>
           </tr>
           <tr>
-            <td>forage</td>
-            <td>search far and wide for food</td>
+            <td class="term" onclick="showForage()">forage</td>
+            <td id="forage" class="definition" style="display: none">
+              search far and wide for food
+            </td>
           </tr>
           <tr>
-            <td>improvisation</td>
-            <td>creating spontaneously, using whatever is available</td>
+            <td class="term" onclick="showImprov()">improvisation</td>
+            <td id="improvisation" class="definition" style="display: none">
+              creating spontaneously, using whatever is available
+            </td>
           </tr>
           <tr>
-            <td>undulating</td>
-            <td>moving with a wave-like motion</td>
+            <td class="term" onclick="showUndulate()">undulating</td>
+            <td id="undulating" class="definition" style="display: none">
+              moving with a wave-like motion
+            </td>
           </tr>
           <tr>
-            <td>eerie</td>
-            <td>spooky, unsettling</td>
+            <td class="term" onclick="showEerie()">eerie</td>
+            <td id="eerie" class="definition" style="display: none">
+              spooky, unsettling
+            </td>
           </tr>
           <tr>
-            <td>writhed</td>
-            <td>twisted or squirmed, usually in pain</td>
+            <td class="term" onclick="showWrithed()">writhed</td>
+            <td id="writhed" class="definition" style="display: none">
+              twisted or squirmed, usually in pain
+            </td>
           </tr>
           <tr>
-            <td>tribute</td>
-            <td>an act or gesture of respect and gratitude</td>
+            <td class="term" onclick="showTribute()">tribute</td>
+            <td id="tribute" class="definition" style="display: none">
+              an act or gesture of respect and gratitude
+            </td>
           </tr>
           <tr>
-            <td>menacingly</td>
-            <td>in a threatening, aggressive way</td>
+            <td class="term" onclick="showMenace()">menacingly</td>
+            <td id="menacingly" class="definition" style="display: none">
+              in a threatening, aggressive way
+            </td>
           </tr>
           <tr>
-            <td>morsel</td>
-            <td>a very small bite of something</td>
+            <td class="term" onclick="showMorsel()">morsel</td>
+            <td id="morsel" class="definition" style="display: none">
+              a very small bite of something
+            </td>
           </tr>
         </table>
         <article>
@@ -85,5 +102,80 @@
     <nav>
       <a href="index.html">Beginning of Lesson - Health</a>
     </nav>
+    <script>
+      const term = document.getElementsByClassName("term");
+
+      function showForage() {
+        var definition = document.getElementById("forage");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showImprov() {
+        var definition = document.getElementById("improvisation");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showUndulate() {
+        var definition = document.getElementById("undulating");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showEerie() {
+        var definition = document.getElementById("eerie");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showWrithed() {
+        var definition = document.getElementById("writhed");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showTribute() {
+        var definition = document.getElementById("tribute");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showMenace() {
+        var definition = document.getElementById("menacingly");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+
+      function showMorsel() {
+        var definition = document.getElementById("morsel");
+        if (definition.style.display === "none") {
+          definition.style.display = "block";
+        } else {
+          definition.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
