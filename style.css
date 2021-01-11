@@ -34,19 +34,19 @@ h6 {
 }
 
 .slide-button {
-  background-image: linear-gradient(to bottom right, #8553b3, #df9ad8);
+  background-color: #00b3cc;
+  border: 1px solid #233346;
   color: white;
   font-size: 24px;
   margin-top: 250px;
   padding: 15px;
-  border: none;
   border-radius: 3px;
 }
 
 .btn,
 .mc-btn {
-  background-image: linear-gradient(to bottom right, #8553b3, #df9ad8);
-  border: none;
+  background-color: #00b3cc;
+  border: 1px solid #233346;
   border-radius: 3px;
   color: white;
 }
