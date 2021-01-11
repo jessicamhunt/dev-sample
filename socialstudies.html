@@ -76,9 +76,9 @@
             and actions. Read each item and decide whether it shows respect or
             disrespect.
           </p>
-          <hr class="py-3" />
-          <!-- Begin Slide -->
-          <section class="row">
+
+          <!-- Begin MC -->
+          <section class="row py-4">
             <article class="col">
               <form id="form-1">
                 <p class="question">
@@ -89,13 +89,13 @@
                 <label for="a1">Respect</label><br />
                 <input type="radio" id="b1" name="answer1" value="true" />
                 <label for="b1">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerOne()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
+                <div id="message-one"></div>
               </form>
               <form id="form-2">
                 <p class="question">
@@ -107,13 +107,13 @@
                 <label for="a2">Respect</label><br />
                 <input type="radio" id="b2" name="answer2" value="false" />
                 <label for="b2">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerTwo()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
+                <div id="message-two"></div>
               </form>
               <form id="form-3">
                 <p class="question">
@@ -125,14 +125,14 @@
                 <label for="a3">Respect</label><br />
                 <input type="radio" id="b3" name="answer3" value="true" />
                 <label for="b3">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerThree()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
               </form>
+              <div id="message-three"></div>
               <form id="form-4">
                 <p class="question">
                   4. Because our cousin LeVar has asthma, we always dust and
@@ -142,13 +142,13 @@
                 <label for="a4">Respect</label><br />
                 <input type="radio" id="b4" name="answer4" value="false" />
                 <label for="b4">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerFour()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
+                <div id="message-four"></div>
               </form>
               <form id="form-5">
                 <p class="question">
@@ -160,13 +160,13 @@
                 <label for="a5">Respect</label><br />
                 <input type="radio" id="b5" name="answer5" value="true" />
                 <label for="b5">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerFive()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
+                <div id="message-five"></div>
               </form>
               <form id="form-6">
                 <p class="question">
@@ -176,30 +176,36 @@
                 <label for="a6">Respect</label><br />
                 <input type="radio" id="b6" name="answer6" value="true" />
                 <label for="b6">Disrespect</label><br />
-                <div class="display-message"></div>
                 <input
                   onclick="revealAnswerSix()"
                   type="button"
-                  class="btn"
+                  class="mc-btn"
                   value="Reveal Answer"
                 />
               </form>
+              <div id="message-six"></div>
             </article>
           </section>
-          <!-- Interactive Question -->
-          <section class="row">
-            <article class="col"></article>
-          </section>
+          <!-- Next Lesson -->
+          <button class="btn text-center mb-5">
+            <a class="text-white" href="english.html">Module 3 - English</a>
+          </button>
         </article>
       </section>
     </main>
-    <nav class="py-5 text-center">
-      <a href="english.html">Next Module - English</a>
-    </nav>
+
+    <!-- Footer-->
+    <footer class="bg-secondary py-5">
+      <div class="container bg-secondary">
+        <div class="small bg-secondary text-center text-white">
+          Copyright © 2020 - Jessica Marilyn Hunt
+        </div>
+      </div>
+    </footer>
     <script>
       /* Check Answers */
 
-      const btn = document.getElementsByClassName(".btn");
+      const btn = document.getElementsByClassName(".mc-btn");
 
       // Question1
       function revealAnswerOne() {
@@ -211,7 +217,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-one").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-one").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-one").innerHTML =
+            "Please select an answer";
+        }
       }
 
       // Question2
@@ -224,7 +238,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-two").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-two").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-two").innerHTML =
+            "Please select an answer";
+        }
       }
 
       // Question3
@@ -237,7 +259,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-three").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-three").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-three").innerHTML =
+            "Please select an answer";
+        }
       }
 
       // Question4
@@ -250,7 +280,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-four").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-four").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-four").innerHTML =
+            "Please select an answer";
+        }
       }
 
       // Question5
@@ -263,7 +301,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-five").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-five").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-five").innerHTML =
+            "Please select an answer";
+        }
       }
 
       // Question6
@@ -276,7 +322,15 @@
             break;
           }
         }
-        alert(valueSelected);
+        if (valueSelected === "true") {
+          document.getElementById("message-six").innerHTML = "Good job!";
+        } else if (valueSelected === "false") {
+          document.getElementById("message-six").innerHTML =
+            "Take another look at the examples in this lesson.";
+        } else {
+          document.getElementById("message-six").innerHTML =
+            "Please select an answer";
+        }
       }
     </script>
     <script

@@ -40,14 +40,21 @@ h6 {
   border-radius: 3px;
 }
 
-.btn {
+.btn,
+.mc-btn {
   background-image: linear-gradient(to bottom right, #8553b3, #df9ad8);
+  border: none;
+  border-radius: 3px;
   color: white;
 }
 
 .card-img-top {
   width: 100%;
   height: auto;
+}
+
+form {
+  padding: 20px;
 }
 
 #answer {
