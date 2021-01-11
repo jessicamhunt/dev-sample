@@ -48,7 +48,11 @@ h6 {
   color: white;
 }
 
-.card-img-top {
+.wolf-container {
+  height: fit-content;
+}
+.card-img-top,
+.wolf-img {
   width: 100%;
   height: auto;
 }
