@@ -89,79 +89,123 @@
             be helpful in understanding Miyax's difficult situation even after
             winning Amaroq's trust.
           </p>
-          <hr class="py-3" />
+          <p class="pt-5">
+            See if you can figure out what each word might mean when used to
+            describe someone's attempt to survive alone in the Alaskan tundra.
+            Then click the word to see its definition as it will appear in the
+            novel.
+          </p>
           <!-- Terms and Definitions -->
-          <section class="row">
-            <article class="col-8">
-              <table style="width: 100%">
-                <tr>
-                  <th>Term</th>
-                  <th>Definition</th>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showForage()">forage</td>
-                  <td id="forage" class="definition" style="display: none">
-                    search far and wide for food
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showImprov()">improvisation</td>
-                  <td
-                    id="improvisation"
-                    class="definition"
-                    style="display: none"
-                  >
-                    creating spontaneously, using whatever is available
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showUndulate()">undulating</td>
-                  <td id="undulating" class="definition" style="display: none">
-                    moving with a wave-like motion
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showEerie()">eerie</td>
-                  <td id="eerie" class="definition" style="display: none">
-                    spooky, unsettling
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showWrithed()">writhed</td>
-                  <td id="writhed" class="definition" style="display: none">
-                    twisted or squirmed, usually in pain
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showTribute()">tribute</td>
-                  <td id="tribute" class="definition" style="display: none">
-                    an act or gesture of respect and gratitude
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showMenace()">menacingly</td>
-                  <td id="menacingly" class="definition" style="display: none">
-                    in a threatening, aggressive way
-                  </td>
-                </tr>
-                <tr>
-                  <td class="term" onclick="showMorsel()">morsel</td>
-                  <td id="morsel" class="definition" style="display: none">
-                    a very small bite of something
-                  </td>
-                </tr>
+          <section class="row text-left">
+            <article class="col-6">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Term</th>
+                    <th scope="col">Definition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="term" onclick="showForage()">
+                      forage
+                    </th>
+                    <td id="forage" class="definition" style="display: none">
+                      search far and wide for food
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showImprov()">
+                      improvisation
+                    </th>
+                    <td
+                      id="improvisation"
+                      class="definition"
+                      style="display: none"
+                    >
+                      creating spontaneously, using whatever is available
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showUndulate()">
+                      undulating
+                    </th>
+                    <td
+                      id="undulating"
+                      class="definition"
+                      style="display: none"
+                    >
+                      moving with a wave-like motion
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showEerie()">
+                      eerie
+                    </th>
+                    <td id="eerie" class="definition" style="display: none">
+                      spooky, unsettling
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showWrithed()">
+                      writhed
+                    </th>
+                    <td id="writhed" class="definition" style="display: none">
+                      twisted or squirmed, usually in pain
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" lass="term" onclick="showTribute()">
+                      tribute
+                    </th>
+                    <td id="tribute" class="definition" style="display: none">
+                      an act or gesture of respect and gratitude
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showMenace()">
+                      menacingly
+                    </th>
+                    <td
+                      id="menacingly"
+                      class="definition"
+                      style="display: none"
+                    >
+                      in a threatening, aggressive way
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="term" onclick="showMorsel()">
+                      morsel
+                    </th>
+                    <td id="morsel" class="definition" style="display: none">
+                      a very small bite of something
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </article>
             <article class="col-4">
               <img src="https://picsum.photos/500/500" alt="" />
             </article>
           </section>
+          <!-- Next Lesson -->
+          <button class="btn text-center mb-5">
+            <a class="text-white" href="index.html"
+              >Back to Module 1 - Health</a
+            >
+          </button>
         </article>
       </section>
     </main>
-    <nav class="py-5 text-center">
-      <a href="index.html">Back to Module 1 - Health</a>
-    </nav>
+    <!-- Footer-->
+    <footer class="bg-secondary py-5">
+      <div class="container bg-secondary">
+        <div class="small bg-secondary text-center text-white">
+          Copyright © 2020 - Jessica Marilyn Hunt
+        </div>
+      </div>
+    </footer>
     <script>
       const term = document.getElementsByClassName("term");
 
