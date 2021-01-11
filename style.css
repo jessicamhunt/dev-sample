@@ -15,8 +15,7 @@ h6 {
   font-family: "Didact Gothic", sans-serif;
 }
 
-header,
-h1 {
+#main-head {
   background-image: linear-gradient(to bottom right, #8553b3, #d8bde2, #df9ad8);
 }
 
