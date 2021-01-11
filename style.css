@@ -16,7 +16,8 @@ h6 {
 }
 
 #main-head {
-  background-image: linear-gradient(to bottom right, #8553b3, #d8bde2, #df9ad8);
+  background-color: #233346;
+  color: white;
 }
 
 #heading-divider {
