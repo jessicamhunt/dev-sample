@@ -19,6 +19,11 @@ h6 {
   background-image: linear-gradient(to bottom right, #8553b3, #d8bde2, #df9ad8);
 }
 
+#heading-divider {
+  width: 70px;
+  border: 2px solid;
+}
+
 img {
   max-width: 100%;
   height: auto; /* default */
