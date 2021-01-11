@@ -40,7 +40,12 @@ h6 {
   border-radius: 3px;
 }
 
-img {
+.btn {
+  background-image: linear-gradient(to bottom right, #8553b3, #df9ad8);
+  color: white;
+}
+
+.card-img-top {
   width: 100%;
   height: auto;
 }

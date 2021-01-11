@@ -73,7 +73,7 @@
           <hr id="heading-divider" class="my-5 text-secondary" />
           <section class="row d-flex justify-content-center">
             <article class="col-8">
-              <p class="py-2 text-left">
+              <p class="py-2 text-center">
                 Just as there are an infinite number of personal interests and
                 beliefs that can be seen among Americans collectively, there are
                 thousands and thousands of organizations and groups to which
@@ -88,9 +88,11 @@
                 below to learn more.
               </p>
             </article>
+            
           </section>
+          <hr id="heading-divider" class="my-5 text-secondary" />
           <!-- Begin Slideshow -->
-          <section class="row">
+          <section class="row py-4">
             <article class="col-2">
               <!-- Slide Navigation Left-->
               <button class="slide-button display-left" onclick="plusDivs(-1)">
@@ -228,13 +230,14 @@
             </article>
           </section>
           <!-- Interactive Question -->
-          <section class="row">
+          <hr id="heading-divider" class="my-5 text-secondary" />
+          <section class="row py-4">
             <article class="col">
               <h1>Interactive Question</h1>
-              <h3 class="question">
+              <h2 class="py-2" class="question">
                 Do some organizations and groups overlap categories?
-              </h3>
-              <button id="show-answer" onClick="revealAnswer()">
+              </h2>
+              <button id="show-answer" class="btn my-4" onClick="revealAnswer()">
                 Reveal Answer
               </button>
               <p id="answer">
@@ -246,13 +249,21 @@
               </p>
             </article>
           </section>
+          <!-- Next Lesson -->
+          <button class="btn text-center mb-5">
+            <a class="text-white" href="socialstudies.html">Module 2 - Social Studies</a>
+          </button>
         </article>
       </section>
     </main>
-    <!-- Next Lesson -->
-    <nav class="py-5 text-center">
-      <a href="socialstudies.html">Module 2 - Social Studies</a>
-    </nav>
+    <!-- Footer-->
+    <footer class="bg-secondary py-5">
+      <div class="container bg-secondary">
+        <div class="small bg-secondary text-center text-white">
+          Copyright © 2020 - Jessica Marilyn Hunt
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap Dependancies -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
