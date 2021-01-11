@@ -13,11 +13,13 @@ h4,
 h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
+  text-shadow: 1px 1px grey;
 }
 
 #main-head {
   background-color: #233346;
   color: white;
+  border-bottom: 5px solid #00b3cc;
 }
 
 #heading-divider {
