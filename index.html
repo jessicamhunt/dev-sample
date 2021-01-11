@@ -91,10 +91,16 @@
           </section>
           <!-- Begin Slideshow -->
           <section class="row">
-            <article class="col d-flex justify-content-center">
+            <article class="col-1">
+              <!-- Slide Navigation Left-->
+              <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+                &#10094;
+              </button>
+            </article>
+            <article class="col-10 d-flex justify-content-center">
               <div id="slideshow">
                 <!-- Slide 1 -->
-                <div id="slide-one" class="slide card" style="width: 40rem">
+                <div id="slide-one" class="slide card">
                   <img
                     src="https://image.shutterstock.com/z/stock-photo-paris-france-january-je-suis-charlie-united-states-secretary-john-kerry-when-he-244695499.jpg"
                     class="card-img-top"
@@ -117,7 +123,7 @@
                   </div>
                 </div>
                 <!-- Slide 2 -->
-                <div id="slide-two" class="slide card" style="width: 40rem">
+                <div id="slide-two" class="slide card">
                   <img
                     src="https://image.shutterstock.com/z/stock-photo-special-interest-groups-signs-people-lobbyists-politics-political-action-committees-d-illustration-497624773.jpg"
                     class="card-img-top"
@@ -138,7 +144,7 @@
                   </div>
                 </div>
                 <!-- Slide 3 -->
-                <div id="slide-three" class="slide card" style="width: 40rem">
+                <div id="slide-three" class="slide card">
                   <img
                     src="https://image.shutterstock.com/z/stock-photo-arcadia-ca-usa-april-american-red-cross-disaster-services-vehicle-and-logo-680544292.jpg"
                     class="card-img-top"
@@ -159,7 +165,7 @@
                   </div>
                 </div>
                 <!-- Slide 4 -->
-                <div id="slide-four" class="slide card" style="width: 40rem">
+                <div id="slide-four" class="slide card">
                   <img
                     src="https://image.shutterstock.com/z/stock-photo-new-york-city-june-people-protesting-against-the-supreme-court-s-decision-limiting-the-1122496454.jpg"
                     class="card-img-top"
@@ -183,7 +189,7 @@
                   </div>
                 </div>
                 <!-- Slide 5 -->
-                <div id="slide-five" class="slide card" style="width: 40rem">
+                <div id="slide-five" class="slide card">
                   <img
                     src="https://image.shutterstock.com/z/stock-photo-lindstrom-mn-usa-september-knights-of-columbus-selling-beer-1736410769.jpg"
                     class="card-img-top"
@@ -208,20 +214,15 @@
                     </p>
                   </div>
                 </div>
-                <!-- Slide Navigation -->
-                <button
-                  class="w3-button w3-display-left"
-                  onclick="plusDivs(-1)"
-                >
-                  &#10094;
-                </button>
-                <button
-                  class="w3-button w3-display-right"
-                  onclick="plusDivs(+1)"
-                >
-                  &#10095;
-                </button>
-              </div>
+              </article>
+              <!-- Slide Navigation Right-->
+            <article class="col-1">
+              <button
+                class="w3-button w3-display-right"
+                onclick="plusDivs(+1)"
+              >
+                &#10095;
+              </button>
             </article>
           </section>
           <!-- Interactive Question -->
