@@ -1,9 +1,7 @@
-* {
-  background-color: white;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 h1,
@@ -13,13 +11,12 @@ h4,
 h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
-  text-shadow: 1px 1px grey;
+  color: white;
 }
 
 #main-head {
-  background-color: #233346;
+  background-color: midnightblue;
   color: white;
-  border-bottom: 5px solid #00b3cc;
 }
 
 #heading-divider {
@@ -34,8 +31,8 @@ h6 {
 }
 
 .slide-button {
-  background-color: #00b3cc;
-  border: 1px solid #233346;
+  background-color: midnightblue;
+  border: 1px solid turquoise;
   color: white;
   font-size: 24px;
   margin-top: 250px;
@@ -45,10 +42,11 @@ h6 {
 
 .btn,
 .mc-btn {
-  background-color: #00b3cc;
-  border: 1px solid #233346;
+  background-color: midnightblue;
+  border: 1px solid turquoise;
   border-radius: 3px;
   color: white;
+  margin: 20px;
 }
 
 .wolf-container {
